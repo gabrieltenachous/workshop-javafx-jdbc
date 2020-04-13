@@ -54,7 +54,7 @@ public class DepartmentListController implements Initializable {
 		Stage stage = (Stage) Main.getMainScene().getWindow();
 		tableViewDepartment.prefHeightProperty().bind(stage.heightProperty());
 	}
-
+	
 	public void updateTableView() {
 		if (service == null) {
 			throw new IllegalStateException("Serviço nulo");
